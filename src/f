@@ -1,0 +1,9 @@
+ if(valorInput){
+          fetch(`${basic}/search/movie?api_key=${apiKey}&query=${valorInput}`).then((r)=> r.json()).then((e)=> {
+            setFilmes(e)
+          })
+          
+        }
+
+
+       
